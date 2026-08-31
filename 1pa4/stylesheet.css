@@ -1,0 +1,30 @@
+@property --color1 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #8bc9b6;
+}
+@property --color2 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #C8F05A;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: var(--color1);
+    color: rgb(34, 0, 112);
+    border: groove 6px rgb(185, 127, 0)
+}
+h1 {
+    text-align: center;
+}
+
+a{
+    color: blue;
+}
+li {
+    list-style-type: none;
+}
