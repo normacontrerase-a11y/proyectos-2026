@@ -1,0 +1,43 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: bisque;
+}
+
+#contenedor {
+    border: 2px solid black;
+    background-color: antiquewhite;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+section { 
+    margin: 20px;
+}
+
+.caja {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.caja1 {
+    background-color: brown;
+    text-align: center;
+    font-weight: bold;
+  
+}
+
+.caja2 {
+    background-color: coral;
+    text-align: right;
+position: relative;
+left: 150px;
+bottom: 140px;
+}
+
+.caja3 {
+    background-color: crimson;
+    font-style: italic;
+}
