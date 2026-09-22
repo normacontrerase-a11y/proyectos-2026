@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid {
+  display: grid;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.grid div {
+  background: #49309b;
+  height: 60px;
+}
+
+.c1 { grid-template-columns: 1fr; }
+.c2 { grid-template-columns: repeat(2, 1fr); }
+.c3 { grid-template-columns: repeat(3, 1fr); }
+.c4 { grid-template-columns: repeat(4, 1fr); }
+
+.r2 { grid-template-rows: repeat(2, 60px); }
+.r3 { grid-template-rows: repeat(3, 60px); }
+.r4 { grid-template-rows: repeat(4, 60px); }
+.r5 { grid-template-rows: repeat(5, 60px); }
+
+.m1 { grid-template-columns: 2fr 1fr; }
+.m2 { grid-template-columns: 1fr 1fr 1fr; }
+.m3 { grid-template-columns: 2fr 1fr; }
+</style>
+</head>
+
+<body>
+
+<h2>1 columna</h2>
+<div class="grid c1">
+  <div></div><div></div><div></div>
+</div>
+
+<hr>
+
+<h2>2 columnas</h2>
+<div class="grid c2">
+  <div></div><div></div><div></div><div></div>
+</div>
+
+<hr>
+
+<h2>3 columnas</h2>
+<div class="grid c3">
+  <div></div><div></div><div></div>
+</div>
+
+<hr>
+
+<h2>4 columnas</h2>
+<div class="grid c4">
+  <div></div><div></div><div></div><div></div>
+</div>
+
+<hr>
+
+<h2>2 filas</h2>
+<div class="grid r2">
+  <div></div><div></div>
+</div>
+
+<hr>
+
+<h2>3 filas</h2>
+<div class="grid r3">
+  <div></div><div></div><div></div>
+</div>
+
+<hr>
+
+<h2>4 filas</h2>
+<div class="grid r4">
+  <div></div><div></div><div></div><div></div>
+</div>
+
+<hr>
+
+<h2>5 filas</h2>
+<div class="grid r5">
+  <div></div><div></div><div></div><div></div><div></div>
+</div>
+
+</body>
+</html>
