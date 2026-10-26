@@ -1,0 +1,360 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #edf1ed;
+    font-family: Arial, sans-serif;
+    color: #073b2d;
+}
+
+.celular {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 22px 22px 30px;
+    background-color: white;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.punto {
+    width: 15px;
+    height: 15px;
+    margin-left: 14px;
+    background-color: #00a875;
+    border-radius: 50%;
+}
+
+.iconos {
+    display: flex;
+    gap: 22px;
+    font-size: 22px;
+}
+
+.portada {
+    height: 405px;
+    position: relative;
+    border-radius: 40px;
+    background: linear-gradient(125deg, #e3f7e6, #e9f7d8);
+    padding: 28px 16px;
+    overflow: hidden;
+}
+
+.texto-portada {
+    position: relative;
+    z-index: 2;
+}
+
+.marca {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: 0 0 22px;
+}
+
+h1 {
+    font-size: 39px;
+    line-height: 0.98;
+    margin: 0 0 20px;
+}
+
+.descripcion {
+    font-size: 14px;
+    line-height: 1.45;
+    margin-bottom: 22px;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    padding: 14px 18px;
+    background-color: #004b36;
+    color: white;
+    font-size: 13px;
+}
+
+.lata-grande {
+    position: absolute;
+    right: 18px;
+    top: 95px;
+    width: 150px;
+    height: 250px;
+    transform: rotate(10deg);
+}
+
+.lata {
+    width: 100px;
+    height: 225px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    border-radius: 18px;
+    background: linear-gradient(
+        to right,
+        #a5c900,
+        #eaff27,
+        #c3df00
+    );
+    box-shadow: 7px 12px 14px #2c5b2a35;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+}
+
+.lata::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    width: 80px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #c5c9ae;
+}
+
+.nombre {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: #16482b;
+}
+
+.tipo {
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.limones {
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.hoja {
+    position: absolute;
+    right: -5px;
+    top: 95px;
+    font-size: 35px;
+}
+
+.puntos-portada {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+}
+
+.puntos-portada span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #b7d2bb;
+}
+
+.puntos-portada span:first-child {
+    background-color: #004b36;
+}
+
+.sabores {
+    margin-top: 30px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.titulo h2 {
+    font-size: 21px;
+    margin: 0;
+}
+
+.titulo span {
+    font-size: 11px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 12px;
+}
+
+.sabor {
+    flex: 1;
+    min-width: 0;
+}
+
+.sabor p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.foto-lata {
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.natural .foto-lata {
+    background-color: #d8f0db;
+}
+
+.citrus .foto-lata {
+    background-color: #ffed8a;
+}
+
+.berry .foto-lata {
+    background-color: #f8dce5;
+}
+
+.foto-lata b {
+    font-size: 17px;
+    writing-mode: vertical-rl;
+    padding: 18px 10px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #d8d9c9, white, #d9decf);
+    box-shadow: 3px 5px 8px #00000020;
+}
+
+.lata-amarilla b {
+    background: linear-gradient(to right, #b5d900, #efff42, #c5df00);
+}
+
+.lata-rosa b {
+    background: linear-gradient(to right, #e75d89, #ffb4c9, #e75d89);
+}
+
+.foto-lata span {
+    font-size: 18px;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #def8ef;
+    border-radius: 22px;
+    margin-top: 28px;
+    padding: 18px 5px 12px;
+}
+
+.beneficios div {
+    flex: 1;
+}
+
+.beneficios span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.beneficios p {
+    font-size: 11px;
+    line-height: 1.35;
+    margin-top: 8px;
+}
+
+.banner {
+    display: flex;
+    height: 150px;
+    margin-top: 28px;
+    border-radius: 22px;
+    overflow: hidden;
+    background-color: #e9f6a6;
+}
+
+.banner-foto {
+    width: 42%;
+    background: linear-gradient(140deg, #76b8d4, #d2e7a0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lata-banner {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 58px;
+    height: 112px;
+    padding-top: 25px;
+    transform: rotate(17deg);
+}
+
+.lata-banner .nombre {
+    font-size: 15px;
+}
+
+.lata-banner .tipo {
+    font-size: 6px;
+}
+
+.lata-banner span:last-child {
+    margin-top: 12px;
+    font-size: 25px;
+}
+
+.banner-texto {
+    flex: 1;
+    padding: 24px 13px;
+    position: relative;
+}
+
+.banner-texto small {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.banner-texto h2 {
+    font-size: 24px;
+    line-height: 1.05;
+    margin-top: 10px;
+}
+
+.flecha {
+    position: absolute;
+    right: 14px;
+    bottom: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #004b36;
+    font-size: 22px;
+}
+
+@media (min-width: 600px) {
+    .celular {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 35px #00000012;
+    }
+}
